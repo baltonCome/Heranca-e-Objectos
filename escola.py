@@ -10,13 +10,13 @@ class Main:
     codigo_estudante = 0
 
     while escola:
-        escolha = int(input("[1}Estudantes\n[2]Professores\n[0]Sair\n>>>>>>>"))
+        escolha = int(input("[1]Estudantes\n[2]Professores\n[0]Sair\n>>>>>>>"))
         if escolha == 1:
             escolha2 = int(input("[1]Registo\n[2]Visualizar Registados\n[3]Atualizar Dados\n[4]Remover\n>>>>>>>>"))
             if escolha2 == 1:
                 codigo_estudante += 1
                 estudante = Estudante(input("Nome: "), input("Genero: "), codigo_estudante,
-                                      float(input("Nota1: ")), float(input("Nota2: ")))
+                                    Estu.validacao(float(input("Nota1: "))), Estu.validacao(float(input("Nota2: "))))
                 Estu.guarda_estudantes(estudante)
             elif escolha2 == 2:
                 Estu.exibe_dados()

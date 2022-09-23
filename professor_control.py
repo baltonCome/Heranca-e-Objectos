@@ -29,7 +29,7 @@ class ProfessorControl:
     @staticmethod
     def exibe_dados():
         for key, value in enumerate(ProfessorControl.professores):
-            print(f"Nome: {value.nome}")
-            print(f"Genero: {value.genero}")
-            print(f"Codigo: {value.codigo}")
-            print(f"Media: {value.nivel_academico}\n")
+            print(f"Nome-----------: {value.nome}")
+            print(f"Genero---------: {value.genero}")
+            print(f"Codigo---------: {value.codigo}")
+            print(f"Nivel Academico: {value.nivel_academico}\n")

@@ -1,3 +1,4 @@
+from ast import Break, Pass
 from estudante import Estudante
 
 
@@ -13,6 +14,12 @@ class EstudanteControl:
             return "Admitido"
         else:
             return "Dispensado"
+
+    @staticmethod
+    def validacao(nota):
+        if not (0 <= nota <= 20):
+            print("Insira notas no intervalo de [0-20]")
+            exit()
 
     @staticmethod
     def guarda_estudantes(estudante):

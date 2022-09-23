@@ -27,11 +27,17 @@ class Estudante(Pessoa):
 
     @nota1.setter
     def nota1(self, nota1):
-        self._nota1 = nota1
+        if 0 <= self._nota1 <= 20:  
+            self._nota1 = nota1
+        else:
+            print("Insira notas no intervalo de [0-20]")
 
     @nota2.setter
     def nota2(self, nota2):
-        self._nota2 = nota2
+        if (0 <= self._nota1 <= 20):  
+            self._nota2 = nota2
+        else:
+            print("Insira notas no intervalo de [0-20]")
 
     @property
     def media(self):

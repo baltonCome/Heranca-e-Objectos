@@ -1,4 +1,4 @@
-import abc
+import abc #ABSTRACT BASE CLASS import.See documentation for further details in case of need!
 
 
 class Pessoa(abc.ABC):
